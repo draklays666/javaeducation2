@@ -57,9 +57,9 @@ public class Dragon extends Monster {
                 return true;
             } else if (r.nextInt(5) == 0 && b == false) {
                 if (n + m > maxNumber){
-                    System.out.println("*Подсказка*: Твое число от " + n + " до " + maxNumber);
+                    System.out.println("*Тебе повезло дракон дал подсказку*: Твое число от " + n + " до " + maxNumber);
                 } else {
-                    System.out.println("*Подсказка*: Твое число от " + n + " до " + (m + n));
+                    System.out.println("*Тебе повезло дракон дал подсказку*: Твое число от " + n + " до " + (m + n));
                 }
                 b = true;
             } else if (guess > number) {

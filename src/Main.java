@@ -73,6 +73,10 @@ public class Main {
                 }
                 System.out.println("Выбранная сложность:\t" + difficultGame);
                 while (true) {
+                    if (person.getLive() == 0) {
+                        System.out.println("ТЫ ПРОИГРАЛ");
+                        break;
+                    }
                     board[person.getY() - 1][person.getX() - 1] = person.getImage();
                     outputBoard(board, person.getLive());
                     System.out.println("Введите куда будет ходить персонаж(ход возможен только по вертикали и горизонтали на одну клетку;" +
@@ -130,7 +134,6 @@ public class Main {
             System.out.println(rightBlock);
         }
         System.out.println(wall);
-
 
         System.out.println("Количество жизней:\t" + live + "\n");
     }
