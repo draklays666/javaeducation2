@@ -74,7 +74,7 @@ public class Main {
                 System.out.println("Выбранная сложность:\t" + difficultGame);
                 while (true) {
                     if (person.getLive() == 0) {
-                        System.out.println("ТЫ ПРОИГРАЛ");
+                        System.out.println("Ты проиграл! У тебя закончились жизни.");
                         break;
                     }
                     board[person.getY() - 1][person.getX() - 1] = person.getImage();
